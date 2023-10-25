@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Traveler template</title>
+    <meta property="og:title" content="Traveler template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-homepage">
+          <div class="home-main">
+            <div class="home-video">
+              <video
+                src=""
+                poster="https://images.unsplash.com/photo-1617303015288-bd982c346080?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDU0fHxwb29sfGVufDB8fHx8MTY5Nzg2MzUxMHww&amp;ixlib=rb-4.0.3&amp;h=1500"
+                class="home-video1"
+              ></video>
+              <div class="home-tint"></div>
+            </div>
+            <div class="home-content">
+              <header data-thq="thq-navbar" class="home-navbar">
+                <img
+                  alt="logo"
+                  src="public/Articles/gwsc-200h.png"
+                  loading="eager"
+                  class="home-logos"
+                />
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path
+                    d="M992.262 871.396l-242.552-206.294c-25.074-22.566-51.89-32.926-73.552-31.926 57.256-67.068 91.842-154.078 91.842-249.176 0-212.078-171.922-384-384-384-212.076 0-384 171.922-384 384s171.922 384 384 384c95.098 0 182.108-34.586 249.176-91.844-1 21.662 9.36 48.478 31.926 73.552l206.294 242.552c35.322 39.246 93.022 42.554 128.22 7.356s31.892-92.898-7.354-128.22zM384 640c-141.384 0-256-114.616-256-256s114.616-256 256-256 256 114.616 256 256-114.614 256-256 256z"
+                  ></path>
+                </svg>
+                <div data-thq="thq-burger-menu" class="home-menu">
+                  <div class="home-links">
+                    <span class="home-text link">Features</span>
+                    <a href="#destinations" class="home-gwsc link">
+                      How it works
+                    </a>
+                    <span class="link">Prices</span>
+                    <a href="#find" class="home-link link">Contact</a>
+                  </div>
+                  <button class="home-hamburger button">
+                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                      <path
+                        d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+                  <div
+                    data-thq="thq-mobile-menu-nav"
+                    data-role="Nav"
+                    class="home-nav"
+                  >
+                    <div class="home-container01">
+                      <img alt="logo" src="public/logo.svg" class="home-logo" />
+                      <div data-thq="thq-close-menu" class="home-menu-close">
+                        <svg viewBox="0 0 1024 1024" class="home-icon04">
+                          <path
+                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <nav
+                      data-thq="thq-mobile-menu-nav-links"
+                      data-role="Nav"
+                      class="home-nav1"
+                    >
+                      <span class="home-text002">About</span>
+                      <span class="home-text003">Features</span>
+                      <span class="home-text004">Pricing</span>
+                      <span class="home-text005">Team</span>
+                      <span class="home-text006">Blog</span>
+                    </nav>
+                    <div class="home-container02">
+                      <button class="home-login button">Login</button>
+                      <button class="button">Register</button>
+                    </div>
+                  </div>
+                  <div class="home-icon-group">
+                    <svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="home-icon06"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon08"
+                    >
+                      <path
+                        d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                      ></path></svg
+                    ><svg
+                      viewBox="0 0 602.2582857142856 1024"
+                      class="home-icon10"
+                    >
+                      <path
+                        d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </header>
+              <div class="home-container03">
+                <div class="home-center">
+                  <div class="home-filter">
+                    <img
+                      alt="image"
+                      src="public/Icons/location.svg"
+                      class="home-image"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Destination"
+                      class="home-textinput input"
+                    />
+                    <input
+                      type="date"
+                      placeholder="Date"
+                      class="home-textinput1 input"
+                    />
+                    <input
+                      type="number"
+                      placeholder="Group size"
+                      class="home-textinput2 input"
+                    />
+                    <div class="home-search">
+                      <img
+                        alt="image"
+                        src="public/Icons/search.svg"
+                        class="home-icon12"
+                      />
+                    </div>
+                  </div>
+                  <p class="home-caption">
+                    <span>Welcome to Global Wild Swimming&nbsp; and</span>
+                    <br />
+                    <span>
+                      Camping , we are your trusted guide to the best wild
+                      swimming spots and camping sites around the globe.
+                    </span>
+                  </p>
+                  <div class="home-container04">
+                    <img
+                      alt="image"
+                      src="https://images.unsplash.com/photo-1496545672447-f699b503d270?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHxjYW1waW5nfGVufDB8fHx8MTY5ODA1MDE4OXww&amp;ixlib=rb-4.0.3&amp;w=300"
+                      class="home-image01"
+                    />
+                    <img
+                      alt="image"
+                      src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDd8fGNhbXBpbmd8ZW58MHx8fHwxNjk4MDUwMTg5fDA&amp;ixlib=rb-4.0.3&amp;w=300"
+                      class="home-image02"
+                    />
+                  </div>
+                  <div class="home-container05">
+                    <span class="home-text010">Clean Wild Pools</span>
+                  </div>
+                  <div class="home-gallery">
+                    <div class="home-container06">
+                      <div class="home-container07">
+                        <div class="home-container08">
+                          <div
+                            class="gallery-card2-gallery-card gallery-card2-root-class-name2"
+                          >
+                            <div class="gallery-card2-container">
+                              <div class="gallery-card2-container1">
+                                <h2 class="gallery-card2-text">
+                                  <span>Pools</span>
+                                </h2>
+                                <span class="gallery-card2-text1">
+                                  <span>Heated clean pools</span>
+                                </span>
+                                <span class="gallery-card2-text2">
+                                  SHOW MORE
+                                </span>
+                              </div>
+                            </div>
+                            <img
+                              alt="image"
+                              src="https://images.unsplash.com/photo-1602019248587-f195eb54ed02?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI0fHxwb29sfGVufDB8fHx8MTY5Nzg2MjQ5NXww&amp;ixlib=rb-4.0.3&amp;h=1500"
+                              class="gallery-card2-image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="home-container09">
+                        <div
+                          class="gallery-card2-gallery-card gallery-card2-root-class-name"
+                        >
+                          <div class="gallery-card2-container">
+                            <div class="gallery-card2-container1">
+                              <h2 class="gallery-card2-text">
+                                <span>Beautiful Sites</span>
+                              </h2>
+                              <span class="gallery-card2-text1">
+                                <span>Open exclusive sites!</span>
+                              </span>
+                              <span class="gallery-card2-text2">SHOW MORE</span>
+                            </div>
+                          </div>
+                          <img
+                            alt="image"
+                            src="https://images.unsplash.com/photo-1632367294096-4e77d53c4ae9?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDM0fHx0ZW50JTIwfGVufDB8fHx8MTY5NzkxNzgxNHww&amp;ixlib=rb-4.0.3&amp;h=1500"
+                            class="gallery-card2-image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="home-container10">
+                      <div
+                        class="gallery-card2-gallery-card gallery-card2-root-class-name4"
+                      >
+                        <div class="gallery-card2-container">
+                          <div class="gallery-card2-container1">
+                            <h2 class="gallery-card2-text">
+                              <span>Tranquil Sites</span>
+                            </h2>
+                            <span class="gallery-card2-text1">
+                              <span>Breathtaking sunsets</span>
+                            </span>
+                            <span class="gallery-card2-text2">SHOW MORE</span>
+                          </div>
+                        </div>
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1628087235616-4e146afcd061?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEzfHx0ZW50JTIwfGVufDB8fHx8MTY5NzkxNzY3NHww&amp;ixlib=rb-4.0.3&amp;h=1500"
+                          class="gallery-card2-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-pagination">
+                <button class="home-previous button-option button">
+                  <svg viewBox="0 0 1024 1024" class="home-icon13">
+                    <path
+                      d="M658 708l-60 60-256-256 256-256 60 60-196 196z"
+                    ></path>
+                  </svg>
+                  <span class="home-text011">Previous</span>
+                </button>
+                <div class="home-pages">
+                  <div class="home-primary">
+                    <div class="home-number-current page-current page">
+                      <span class="home-text012">1</span>
+                    </div>
+                    <div class="page"><span class="home-text013">2</span></div>
+                    <div class="page home-number1">
+                      <span class="home-text014">3</span>
+                    </div>
+                  </div>
+                  <img
+                    alt="image"
+                    src="public/Icons/more.svg"
+                    class="home-more"
+                  />
+                  <div class="page"><span class="home-text015">12</span></div>
+                </div>
+                <button class="home-next button-option button">
+                  <span class="home-text016">Next</span>
+                  <svg viewBox="0 0 1024 1024" class="home-icon15">
+                    <path
+                      d="M426 256l256 256-256 256-60-60 196-196-196-196z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="tours" class="home-information">
+          <div class="home-container11">
+            <div class="home-main1">
+              <div class="home-heading">
+                <h2 class="home-header">See the world like a local</h2>
+                <p class="home-caption1">
+                  <span>At Global Wild Swimming and Camping, we provide</span>
+                  <br />
+                  <span>
+                    a unique platform that allows users to discover, book and
+                    enjoy premier camping and swimming spots globally and
+                    locally.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-sorting">
+            <button class="home-option-primary button">All</button>
+            <button class="button-option button">Popular</button>
+            <button class="button-option button">Featured</button>
+            <button class="button-option button">Trending</button>
+          </div>
+          <div class="home-offers">
+            <a href="index.html">
+              <div class="home-offer-container">
+                <div class="offer-offer offer-root-class-name">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1682687220015-186f63b8850a?ixid=M3w5MTMyMXwxfDF8YWxsfDQxfHx8fHx8Mnx8MTY5ODEzOTg0MXw&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="offer-image"
+                  />
+                  <div class="offer-content">
+                    <div class="offer-details">
+                      <span class="offer-text"><span>Crete, Greece</span></span>
+                      <span class="offer-text1">
+                        <span>3 Local guides</span>
+                      </span>
+                    </div>
+                    <span class="offer-text2">
+                      <span>
+                        Escape to nature and experience the thrill of wild
+                        swimming and camping. Discover hidden gems, serene
+                        lakes, and breathtaking landscapes.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="offer-offer offer-root-class-name1">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1569700908996-4f1fd829d21a?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEzfHxpc2xhbnxlbnwwfHx8fDE2OTc5MTg3OTh8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="offer-image"
+                  />
+                  <div class="offer-content">
+                    <div class="offer-details">
+                      <span class="offer-text">
+                        <span>Machu Picchu, Peru</span>
+                      </span>
+                      <span class="offer-text1">
+                        <span>34 Local Guides</span>
+                      </span>
+                    </div>
+                    <span class="offer-text2">
+                      <span>
+                        Escape to the breathtaking beauty of nature and immerse
+                        yourself in the exhilarating experience of wild swimming
+                        and camping. Discover hidden treasures, serene lakes,
+                        and awe-inspiring landscapes.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="index.html"><div class="home-offer-container1"></div></a>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4667.865647645675!2d34.612885733524685!3d-13.734468926575113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x18dffd0d62c84e77%3A0x5f48da1959487097!2s7J86%2BCX2%20global%20wild%20swimming%20camp%2C%20Senga%2C%20Malawi!3m2!1d-13.7340096!2d34.6124197!5e0!3m2!1sen!2ske!4v1698026956630!5m2!1sen!2ske"
+              class="home-iframe"
+            ></iframe>
+          </div>
+          <div class="home-pricing">
+            <div class="home-pricing-card">
+              <span class="home-text020">Explorer</span>
+              <div class="home-container12">
+                <span class="home-text021">
+                  <span>$</span>
+                  <span></span>
+                </span>
+                <span class="home-text024">6,000</span>
+              </div>
+              <div class="home-container13">
+                <span class="home-text025">✔ Full access to all camps</span>
+                <span class="home-text026">✔ 6 bookings per month</span>
+                <span class="home-text027">
+                  <span>✔ Premium customer</span>
+                  <br />
+                  <span>support</span>
+                  <br />
+                </span>
+                <span class="home-text032">✔ Priority in bookings</span>
+              </div>
+              <button class="home-button button">Learn More</button>
+            </div>
+            <div class="home-pricing-card1">
+              <span class="home-text033">Pro camper</span>
+              <div class="home-container14">
+                <span class="home-text034">
+                  <span>$</span>
+                  <span></span>
+                </span>
+                <span class="home-text037">9,900</span>
+              </div>
+              <span class="home-text038">
+                <span>Billed annualy or $32 month-to-month.</span>
+                <span></span>
+              </span>
+              <div class="home-container15">
+                <span class="home-text041">
+                  ✔ All features of Explorer plan
+                </span>
+                <span class="home-text042">✔ Priority support</span>
+                <span class="home-text043">
+                  <span>✔ Unlimited access to</span>
+                  <br />
+                  <span>directory + Exclusive spots</span>
+                  <br />
+                </span>
+                <span class="home-text048">✔ Additional site amenities</span>
+              </div>
+              <button class="home-button1 button">Learn More</button>
+            </div>
+            <div class="home-container16">
+              <div class="home-pricing-card2">
+                <span class="home-text049">Starter</span>
+                <div class="home-container17">
+                  <span class="home-text050">
+                    <span>$</span>
+                    <span></span>
+                  </span>
+                  <span class="home-text053">4,000</span>
+                </div>
+                <div class="home-container18">
+                  <span class="home-text054">✔Customer support</span>
+                  <span class="home-text055">
+                    <span>✔ Access to basic</span>
+                    <br />
+                    <span>camping locations.</span>
+                    <br />
+                  </span>
+                  <span class="home-text060">
+                    <span>✔ 6 bookings per</span>
+                    <br />
+                    <span>month</span>
+                    <br />
+                  </span>
+                  <span class="home-text065">✔Free flight ticket</span>
+                </div>
+                <button class="home-button2 button">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works" class="home-pitch-types-and-availability">
+          <div class="home-filter1">
+            <img
+              alt="image"
+              src="public/Icons/location.svg"
+              class="home-image03"
+            />
+            <input
+              type="text"
+              placeholder="Destination"
+              class="home-textinput3 input"
+            />
+            <input
+              type="date"
+              placeholder="Date"
+              class="home-textinput4 input"
+            />
+            <input
+              type="number"
+              placeholder="Group size"
+              class="home-textinput5 input"
+            />
+            <div class="home-search1">
+              <img
+                alt="image"
+                src="public/Icons/search.svg"
+                class="home-icon17"
+              />
+            </div>
+          </div>
+          <div class="home-highlight">
+            <div class="home-content1">
+              <div class="home-heading1">
+                <h2 class="home-header1">Tent pitch</h2>
+                <p class="home-caption2">
+                  <span>Escape to the great outdoors with</span>
+                  <br />
+                  <span>GWSC's tent pitches. Wake up to</span>
+                  <br />
+                  <span>nature's beauty, enjoy campfires</span>
+                  <br />
+                  <span>under the stars, and book your spot</span>
+                  <br />
+                  <span>today for an unforgettable adventure.</span>
+                  <br />
+                  <br />
+                </p>
+              </div>
+              <button class="home-find button">Find a local guide</button>
+            </div>
+            <div class="home-image04">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1628087236671-6730a5b9d79a?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHx0ZW50JTIwfGVufDB8fHx8MTY5NzkxNzY3NHww&amp;ixlib=rb-4.0.3&amp;w=1200"
+                class="home-image05"
+              />
+            </div>
+          </div>
+          <div class="home-highlight1">
+            <div class="home-image06">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1513311068348-19c8fbdc0bb6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHxjYXJhdmFufGVufDB8fHx8MTY5NzkxOTEwMHww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="home-image07"
+              />
+            </div>
+            <div class="home-content2">
+              <div class="home-heading2">
+                <h2 class="home-header2">Touring Caravan Pitch</h2>
+                <p class="home-caption3">
+                  <span>
+                    Park your touring caravan in the heart of nature at GWSC.
+                    Our spacious pitches offer convinience and comfort, making
+                    it the perfect base for your outdoor adventure.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Book your caravan pitch now and experience the beauty of the
+                    wild with ease.
+                  </span>
+                </p>
+              </div>
+              <button class="home-find1 button">Find a local guide</button>
+            </div>
+          </div>
+          <div class="home-highlight2">
+            <div class="home-image08">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1516394399858-ae258cf724cc?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEzfHxtb3RvcmhvbWV8ZW58MHx8fHwxNjk3OTE5MTUyfDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="home-image09"
+              />
+            </div>
+            <div class="home-content3">
+              <div class="home-heading3">
+                <h2 class="home-header3">Motorhome Pitch</h2>
+                <p class="home-caption4">
+                  <span>
+                    Travel in style and comfort with our motorhome pitches at
+                    GWSC. Enjoy the freedom of the open road and the convenience
+                    of well-equipped pitches. Your next adventure begins here -
+                    reserve your motorhome pitch and explore the wild with all
+                    the comforts of home.
+                  </span>
+                  <br />
+                </p>
+              </div>
+              <button class="home-find2 button">Find a local guide</button>
+            </div>
+          </div>
+        </section>
+        <section id="guides" class="home-reviews">
+          <div class="home-heading4"></div>
+          <h1 class="home-text083">Visitor Reviews</h1>
+          <div class="home-testimonial">
+            <img
+              alt="image"
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=300"
+              class="home-image10"
+            />
+            <div class="home-testimonial1">
+              <div class="home-container19">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon18">
+                  <path
+                    d="M438.857 548.571v219.429c0 60.571-49.143 109.714-109.714 109.714h-219.429c-60.571 0-109.714-49.143-109.714-109.714v-402.286c0-161.143 131.429-292.571 292.571-292.571h36.571c20 0 36.571 16.571 36.571 36.571v73.143c0 20-16.571 36.571-36.571 36.571h-36.571c-80.571 0-146.286 65.714-146.286 146.286v18.286c0 30.286 24.571 54.857 54.857 54.857h128c60.571 0 109.714 49.143 109.714 109.714zM950.857 548.571v219.429c0 60.571-49.143 109.714-109.714 109.714h-219.429c-60.571 0-109.714-49.143-109.714-109.714v-402.286c0-161.143 131.429-292.571 292.571-292.571h36.571c20 0 36.571 16.571 36.571 36.571v73.143c0 20-16.571 36.571-36.571 36.571h-36.571c-80.571 0-146.286 65.714-146.286 146.286v18.286c0 30.286 24.571 54.857 54.857 54.857h128c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="home-text084">
+                <span>GWSC provided me with the most amazing</span>
+                <br />
+                <span>
+                  wild swimming and camping experience. The sights were
+                </span>
+                <br />
+                <span>stunning, and the staff was incredibly helpful.</span>
+              </span>
+              <div class="home-container20">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon20">
+                  <path
+                    d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span class="home-text090">JaneSmith</span>
+            <span class="home-text091">GWSC</span>
+          </div>
+          <div class="home-testimonial2">
+            <div class="home-container21">
+              <div class="home-container22">
+                <div class="home-container23">
+                  <div
+                    class="testimonial-card2-testimonial-card testimonial-card2-root-class-name1"
+                  >
+                    <div class="testimonial-card2-testimonial">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        class="testimonial-card2-icon"
+                      >
+                        <path
+                          d="M225 448c123.712 0 224 100.29 224 224 0 123.712-100.288 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.634 11.636-22.252 24.016-31.83 37.020 11.438-1.8 23.16-2.746 35.104-2.746zM801 448c123.71 0 224 100.29 224 224 0 123.712-100.29 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.636 11.636-22.254 24.016-31.832 37.020 11.44-1.8 23.16-2.746 35.106-2.746z"
+                        ></path>
+                      </svg>
+                      <span class="testimonial-card2-text">
+                        <span>
+                          This site introduced me to some of the most
+                          picturesque camping spots. Five stars!
+                        </span>
+                      </span>
+                      <span class="testimonial-card2-text1">
+                        <span>Billy</span>
+                      </span>
+                    </div>
+                    <img
+                      alt="profile"
+                      src="https://images.unsplash.com/photo-1614630982169-e89202c5e045?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUyMTk4&amp;ixlib=rb-1.2.1&amp;h=1200"
+                      class="testimonial-card2-image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="testimonial-card2-testimonial-card testimonial-card2-root-class-name2"
+                >
+                  <div class="testimonial-card2-testimonial">
+                    <svg viewBox="0 0 1024 1024" class="testimonial-card2-icon">
+                      <path
+                        d="M225 448c123.712 0 224 100.29 224 224 0 123.712-100.288 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.634 11.636-22.252 24.016-31.83 37.020 11.438-1.8 23.16-2.746 35.104-2.746zM801 448c123.71 0 224 100.29 224 224 0 123.712-100.29 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.636 11.636-22.254 24.016-31.832 37.020 11.44-1.8 23.16-2.746 35.106-2.746z"
+                      ></path>
+                    </svg>
+                    <span class="testimonial-card2-text">
+                      <span>
+                        My camping experiences have been significantly enhanced
+                        due to this site. The locations suggested are simply
+                        breathtaking. I am really happy with their
+                        recommendations. Clearly a five star service.
+                      </span>
+                    </span>
+                    <span class="testimonial-card2-text1">
+                      <span>Davis</span>
+                    </span>
+                  </div>
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwYnd8ZW58MHx8fHwxNjI2NDUyMjQw&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    class="testimonial-card2-image"
+                  />
+                </div>
+              </div>
+              <div class="home-container24">
+                <div
+                  class="testimonial-card4-testimonial-card testimonial-card4-root-class-name"
+                >
+                  <svg viewBox="0 0 1024 1024" class="testimonial-card4-icon">
+                    <path
+                      d="M225 448c123.712 0 224 100.29 224 224 0 123.712-100.288 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.634 11.636-22.252 24.016-31.83 37.020 11.438-1.8 23.16-2.746 35.104-2.746zM801 448c123.71 0 224 100.29 224 224 0 123.712-100.29 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.636 11.636-22.254 24.016-31.832 37.020 11.44-1.8 23.16-2.746 35.106-2.746z"
+                    ></path>
+                  </svg>
+                  <span class="testimonial-card4-text">
+                    <span>
+                      My camping experiences have been significantly enhanced
+                      due to this site. The locations suggested are simply
+                      breathtaking. I am really happy with their
+                      recommendations. Clearly a five star service.
+                    </span>
+                  </span>
+                  <div class="testimonial-card4-profile">
+                    <img
+                      alt="John Doe"
+                      src="https://images.unsplash.com/photo-1546456073-ea246a7bd25f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsYWNrJTIwbWFufGVufDB8fHx8MTYyNjQ1MjAwOA&amp;ixlib=rb-1.2.1&amp;h=1200"
+                      class="testimonial-card4-image"
+                    />
+                    <div class="testimonial-card4-container">
+                      <span class="testimonial-card4-text1">
+                        <span>Zack</span>
+                      </span>
+                      <span class="testimonial-card4-text2">
+                        <span>Software Engineer</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-stats">
+            <div class="home-stat">
+              <h1 class="home-text092">9,000+</h1>
+              <span class="home-text093">Happy clients</span>
+              <span class="home-text094">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </span>
+            </div>
+            <div class="home-stat1">
+              <h1 class="home-text095">30,069</h1>
+              <span class="home-text096">Tours completed</span>
+              <span class="home-text097">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </span>
+            </div>
+            <div class="home-stat2">
+              <h1 class="home-text098">
+                <span>500,000</span>
+                <span>+</span>
+              </h1>
+              <span class="home-text101">Hours</span>
+              <span class="home-text102">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </span>
+            </div>
+            <div class="home-stat3">
+              <h1 class="home-text103"><span>24/7</span></h1>
+              <span class="home-text105">Support</span>
+              <span class="home-text106">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </span>
+            </div>
+          </div>
+        </section>
+        <section id="destinations" class="home-features">
+          <div class="home-video-details">
+            <div class="home-heading5">
+              <h2 class="home-header4">Spotlight destinations</h2>
+              <p class="home-caption5">
+                Our platform offers an array of features that cater to your
+                adventurous spirit and ensure&nbsp; a seamless experience.
+              </p>
+            </div>
+            <div class="home-video-wrapper">
+              <div class="home-tint1">
+                <img
+                  alt="image"
+                  src="public/Icons/play.svg"
+                  class="home-image11"
+                />
+              </div>
+              <video
+                src=""
+                poster="https://images.unsplash.com/photo-1519639588593-d506729a9edb?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDM4fHx3aWxkJTIwc3dpbW1pbmd8ZW58MHx8fHwxNjk3OTIxMjM1fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="home-video2"
+              ></video>
+            </div>
+          </div>
+          <p class="home-caption6">
+            <span>
+              At GWSC, we offer you an opportunity&nbsp; to reconnect with
+              nature
+            </span>
+            <br />
+            <span>
+              and create unforgettable memories. Our wild swimming and
+            </span>
+            <br />
+            <span>
+              camping sites are carefully chosen to provide a unique and
+              immersive life experience. We have all these amenities just for
+              you:
+            </span>
+            <br />
+          </p>
+          <div class="home-list">
+            <a href="index.html" class="home-navlink2">
+              <div class="home-location-wrapper">
+                <div class="location-item">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1586798271654-0471bb1b0517?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwfHxyZXN0cm9vbXN8ZW58MHx8fHwxNjk3OTU4ODY1fDA&amp;ixlib=rb-4.0.3&amp;h=400"
+                    class="location-background"
+                  />
+                  <div class="location-content">
+                    <span class="location-location">
+                      <span>Clean restrooms</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="index.html" class="home-navlink3">
+              <div class="home-location-wrapper1">
+                <div class="location-item">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1605144884374-ecbb643615f6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxHb2xmfGVufDB8fHx8MTY5Nzk1NDA1NXww&amp;ixlib=rb-4.0.3&amp;h=400"
+                    class="location-background"
+                  />
+                  <div class="location-content">
+                    <span class="location-location">
+                      <span>Professional Golf Course</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="index.html" class="home-navlink4">
+              <div class="home-location-wrapper2">
+                <div class="location-item">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1565616152455-b0ae3a879cde?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGJydWd8ZW58MHx8fHwxNjk3OTE5NDMxfDA&amp;ixlib=rb-4.0.3&amp;h=400"
+                    class="location-background"
+                  />
+                  <div class="location-content">
+                    <span class="location-location">
+                      <span>Eco friendly electric cars</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="index.html" class="home-navlink5">
+              <div class="home-location-wrapper3">
+                <div class="location-item">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1634840542403-1a9b1067aaa0?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDM4fHx0ZW5uaXN8ZW58MHx8fHwxNjk3OTUzOTg0fDA&amp;ixlib=rb-4.0.3&amp;h=400"
+                    class="location-background"
+                  />
+                  <div class="location-content">
+                    <span class="location-location">
+                      <span>Large Tennis Court</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section id="find" class="home-contact">
+          <div class="home-heading6">
+            <h2 class="home-header5">
+              Reach out from in there and talk to us today!
+            </h2>
+          </div>
+          <h1 class="home-text113">Contact Form</h1>
+          <form class="home-form">
+            <div class="home-container25">
+              <textarea
+                placeholder="Enquiries"
+                class="home-textarea textarea"
+              ></textarea>
+              <input
+                type="text"
+                name="email"
+                required=""
+                placeholder="your email"
+                class="input"
+              />
+            </div>
+            <button id="submit" name="submit" type="submit" class="button">
+              <span>
+                <span>Submit Form</span>
+                <br />
+              </span>
+            </button>
+          </form>
+        </section>
+        <section class="home-local-attractions">
+          <div id="articles" class="home-content4">
+            <div class="home-heading7">
+              <h2 class="home-header6">
+                <span>Local Attractions</span>
+                <br />
+              </h2>
+              <p class="home-caption7">
+                Used by nature enthusiasts and adventure seekers from around the
+                world
+              </p>
+            </div>
+            <div class="home-list1">
+              <div class="home-row">
+                <div class="article-article article-root-class-name1">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1566827130010-05083a40e3a7?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDh8fG5hdHVyZSUyMGF0JTIweW91ciUyMGRvb3JzdGVwfGVufDB8fHx8MTY5NzkyMDM1Nnww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header">
+                        <span>Nature At your Doorstep</span>
+                      </h2>
+                      <p class="article-description">
+                        <span>
+                          Immerse yourself at the beauty of nature with our
+                          stunning camping locations. Wake up to the sound of
+                          birds chirping and enjoy breathtaking views right at
+                          your dooorstep
+                        </span>
+                      </p>
+                    </div>
+                    <button class="button-arrow button">
+                      <span class="article-text">Read more</span>
+                      <span class="article-text1">&gt;</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="article-article article-root-class-name">
+                  <img
+                    alt="image"
+                    src="public/Articles/articles-21-1500w.png"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header">
+                        <span>Variety Of Pitch Types</span>
+                      </h2>
+                      <p class="article-description">
+                        <span>
+                          Choose from a variety of pitch types, including
+                          lakeside, riverside, and woodland pitches. Each pitch
+                          is designed to enhance your camping experience
+                        </span>
+                      </p>
+                    </div>
+                    <button class="button-arrow button">
+                      <span class="article-text">Read more</span>
+                      <span class="article-text1">&gt;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="home-row1">
+                <div class="article-article article-root-class-name2">
+                  <img
+                    alt="image"
+                    src="public/Articles/articles-31-1500w.png"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header">
+                        <span>The Ultimate Camping Checklist</span>
+                      </h2>
+                      <p class="article-description">
+                        <span>
+                          Camping soon but not sure what to pack? Check our
+                          ultimate camping checklist...
+                        </span>
+                      </p>
+                    </div>
+                    <button class="button-arrow button">
+                      <span class="article-text">Read more</span>
+                      <span class="article-text1">&gt;</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="article-article article-root-class-name3">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixid=M3w5MTMyMXwxfDF8YWxsfDZ8fHx8fHwyfHwxNjk3OTE2ODUxfA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header">
+                        <span>Essential Gears for Wild Swimming</span>
+                      </h2>
+                      <p class="article-description">
+                        <span>
+                          Do you have the correct gear for your wild swimming?
+                          Let's verify as we unveil the essential items...
+                        </span>
+                      </p>
+                    </div>
+                    <button class="button-arrow button">
+                      <span class="article-text">Read more</span>
+                      <span class="article-text1">&gt;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="home-row2">
+                <button class="home-read-all button-option button">
+                  Read all articles
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-footer">
+          <div class="home-content5">
+            <div class="home-main2">
+              <div class="home-branding">
+                <div class="home-heading8">
+                  <img
+                    alt="image"
+                    src="public/Articles/gwsc-200h.png"
+                    class="home-image12"
+                  />
+                  <p class="home-caption8">
+                    <span class="home-text119">
+                      Global Wild Swimming and Camping
+                    </span>
+                    <br class="home-text120" />
+                  </p>
+                </div>
+              </div>
+              <div class="home-links1">
+                <div class="home-items">
+                  <button class="home-link01 button button-clean">
+                    Find a guide
+                  </button>
+                  <a
+                    href="#destinations"
+                    class="home-link02 button button-clean"
+                  >
+                    Find a tour
+                  </a>
+                  <a
+                    href="#destinations"
+                    class="home-link03 button button-clean"
+                  >
+                    Visit a city
+                  </a>
+                  <a
+                    href="#destinations"
+                    class="home-link04 button button-clean"
+                  >
+                    Visit a country
+                  </a>
+                </div>
+                <div class="home-items1">
+                  <a
+                    href="#how-it-works"
+                    class="home-link05 button button-clean"
+                  >
+                    How it works
+                  </a>
+                  <button class="home-link06 button button-clean">
+                    Cancelation policy
+                  </button>
+                  <button class="home-link07 button button-clean">
+                    Local guides
+                  </button>
+                  <button class="home-link08 button button-clean">
+                    Affiliate
+                  </button>
+                </div>
+                <div class="home-items2">
+                  <button class="home-link09 button button-clean">
+                    About us
+                  </button>
+                  <button class="home-link10 button button-clean">Blog</button>
+                  <button class="home-link11 button button-clean">
+                    Partners
+                  </button>
+                  <button class="home-link12 button button-clean">Faqs</button>
+                  <button class="home-link13 button button-clean">
+                    Careers
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="home-social-bar">
+              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon22">
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon24">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon26">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path></svg
+              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon28">
+                <path
+                  d="M585.143 857.143c-5.714-33.143-27.429-147.429-80-284.571-0.571 0-1.714 0.571-2.286 0.571 0 0-222.286 77.714-294.286 234.286-3.429-2.857-8.571-6.286-8.571-6.286 65.143 53.143 148 85.714 238.857 85.714 52 0 101.143-10.857 146.286-29.714zM479.429 510.286c-9.143-21.143-19.429-42.286-30.286-63.429-193.143 57.714-378.286 53.143-384.571 53.143-0.571 4-0.571 8-0.571 12 0 96 36.571 184 96 250.286v0c102.286-182.286 304.571-247.429 304.571-247.429 5.143-1.714 10.286-2.857 14.857-4.571zM418.286 389.143c-65.143-115.429-134.286-209.143-139.429-216-104.571 49.143-182.286 145.714-206.857 261.714 9.714 0 166.286 1.714 346.286-45.714zM809.143 571.429c-8-2.286-112.571-35.429-233.714-16.571 49.143 135.429 69.143 245.714 73.143 268 84-56.571 143.429-146.857 160.571-251.429zM349.143 148c-0.571 0-0.571 0-1.143 0.571 0 0 0.571-0.571 1.143-0.571zM686.286 230.857c-65.714-58.286-152.571-93.714-247.429-93.714-30.286 0-60 4-88.571 10.857 5.714 7.429 76.571 100.571 140.571 218.286 141.143-52.571 194.286-133.714 195.429-135.429zM813.714 508c-1.143-88.571-32.571-170.286-85.143-234.286-1.143 1.143-61.143 88-209.143 148.571 8.571 17.714 17.143 36 25.143 54.286 2.857 6.286 5.143 13.143 8 19.429 129.143-16.571 256.571 11.429 261.143 12zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="home-icon30">
+                <path
+                  d="M1013.8 307.2c0 0-10-70.6-40.8-101.6-39-40.8-82.6-41-102.6-43.4-143.2-10.4-358.2-10.4-358.2-10.4h-0.4c0 0-215 0-358.2 10.4-20 2.4-63.6 2.6-102.6 43.4-30.8 31-40.6 101.6-40.6 101.6s-10.2 82.8-10.2 165.8v77.6c0 82.8 10.2 165.8 10.2 165.8s10 70.6 40.6 101.6c39 40.8 90.2 39.4 113 43.8 82 7.8 348.2 10.2 348.2 10.2s215.2-0.4 358.4-10.6c20-2.4 63.6-2.6 102.6-43.4 30.8-31 40.8-101.6 40.8-101.6s10.2-82.8 10.2-165.8v-77.6c-0.2-82.8-10.4-165.8-10.4-165.8zM406.2 644.8v-287.8l276.6 144.4-276.6 143.4z"
+                ></path>
+              </svg>
+            </div>
+            <span class="home-copyright">
+              © 2024 Character. All Rights Reserved.
+            </span>
+          </div>
+        </section>
+        <div>
+          <div class="home-container27">
+            <script>
+              function initAccordion() {
+                /*
+                Accordion - Code Embed
+                */
+                const accordionContainers = document.querySelectorAll(
+                  '[data-role='accordion-container']'
+                ); // All accordion containers
+                const accordionContents = document.querySelectorAll(
+                  '[data-role='accordion-content']'
+                ); // All accordion content
+                const accordionIconsClosed = document.querySelectorAll(
+                  '[data-role='accordion-icon-closed']'
+                ); // All accordion closed icons
+                const accordionIconsOpen = document.querySelectorAll(
+                  '[data-role='accordion-icon-open']'
+                ); // All accordion open icons
+
+                accordionContents.forEach((accordionContent) => {
+                  accordionContent.style.display = 'none'; //Hides all accordion contents
+                });
+
+                accordionIconsClosed.forEach((icon) => {
+                  icon.style.display = 'flex';
+                });
+
+                accordionIconsOpen.forEach((icon) => {
+                  icon.style.display = 'none';
+                });
+
+                accordionContainers.forEach((accordionContainer, index) => {
+                  if (accordionContainer.classList.contains('initialised')) {
+                    return;
+                  }
+
+                  accordionContainer.classList.add('initiased');
+
+                  accordionContainer.addEventListener('click', () => {
+                    if (accordionContents[index].style.display === 'flex') {
+                      // If the accordion is already open, close it
+                      accordionContents[index].style.display = 'none';
+                      accordionIconsClosed[index].style.display = 'flex';
+                      accordionIconsOpen[index].style.display = 'none';
+                    } else {
+                      // If the accordion is closed, open it
+                      accordionContents.forEach((accordionContent) => {
+                        accordionContent.style.display = 'none'; //Hides all accordion contents
+                      });
+
+                      accordionIconsClosed.forEach((accordionIcon) => {
+                        accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                      });
+
+                      accordionIconsOpen.forEach((accordionIcon) => {
+                        accordionIcon.style.display = 'none';
+                      });
+
+                      accordionContents[index].style.display = 'flex'; // Shows accordion content
+                      accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                      accordionIconsOpen[index].style.display = 'flex';
+                    }
+                  });
+                });
+              }
+
+              initAccordion();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
